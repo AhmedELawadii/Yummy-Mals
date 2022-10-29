@@ -1,0 +1,108 @@
+.textcontent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 1s all;
+}
+.content:hover .textcontent {
+  transform: translateY(-100%);
+  cursor: pointer;
+}
+.slide {
+  z-index: 5646;
+  padding: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.hiddenSlide {
+  width: 16%;
+  z-index: 555555555;
+  left: -16%;
+}
+@media only screen and (max-width: 600px) {
+  .hiddenSlide {
+    font-size: 10px;
+  }
+}
+.hiddenSlide li {
+  padding: 20px;
+}
+ul {
+  transform: translateY(-100%);
+
+  transition: 0.5s all;
+}
+
+.di {
+  height: 45%;
+}
+.p {
+  width: 50px;
+}
+
+i {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.hiddenSlide a {
+  color: white;
+  font-weight: 600;
+}
+.hiddenSlide a:hover {
+  color: #dc3545;
+}
+
+/* search css */
+.searchContent input {
+  width: 30%;
+  display: inline-block;
+  margin: 30px;
+}
+
+.mn {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(16, 15, 15, 0.5);
+}
+
+.ten-chars {
+  /* display: block;or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 5.6em;
+  line-height: 1.8em;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 5px;
+}
+
+.inputs input:focus {
+  outline: none;
+  /* border-bottom: 5px solid green; */
+}
+
+.loadingLayer {
+  position: fixed;
+  z-index: 4444444;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  overflow-y: hidden;
+}
